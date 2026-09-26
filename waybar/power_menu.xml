@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkMenu" id="menu">
+    <child>
+      <object class="GtkMenuItem" id="suspend">
+        <property name="name">suspend</property>
+        <property name="label">Suspender</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="hibernate">
+        <property name="name">hibernate</property>
+        <property name="label">Hibernar</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="shutdown">
+        <property name="name">shutdown</property>
+        <property name="label">Desligar</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="reboot">
+        <property name="name">reboot</property>
+        <property name="label">Reiniciar</property>
+      </object>
+    </child>
+  </object>
+</interface>

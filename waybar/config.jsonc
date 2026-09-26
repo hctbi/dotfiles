@@ -1,0 +1,155 @@
+{
+	"excluisve": true,
+	"layer": "top",
+	"modules-left": ["hyprland/workspaces", "hyprland/submap", "group/media" ],
+	"modules-center": ["clock"],
+	"modules-right": ["group/brim","group/volume","battery","bluetooth","network", "cpu", "memory","custom/power"],
+	"hyprland/window": {
+	"separate-outputs": true,
+      //"max-length": 20,
+      "format": "{class}",
+      "rewrite": {
+	// if any window is focused display Finder
+	"": "Arch",
+	"kitty": "Arch",
+	"vesktop": "Discord",
+	"vivaldi-stable": "Browser",
+	"org.telegram.desktop": "Telegram"
+      }
+	},
+	"battery": {
+		"bat": "BAT0",
+		"interval": 60,
+		"format": "{capacity}% {icon}",
+		"format-icons": {
+			"default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+			"charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+		}
+	},
+	"backlight/slider": {
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal",
+		"device": "intel_backlight"
+	},
+	"backlight": {
+		"device": "intel_backlight",
+		"format": "{icon}",
+		"format-icons": ["󰽤","󰃜","󰃛","󰃚"]
+	},
+	"hyprland/workspaces": {
+		"on-click": "activate",
+		"tooltip": false
+	},
+	"network": {
+		"format-wifi": "",
+		"format-ethernet": "",
+		"format-disconnected": "󰤭",
+		"tooltip-format": "{ifname} via {gwaddr} 󰊗",
+		"tooltip-format-wifi": "({signalStrength}%) ",
+		"tooltip-format-ethernet": "{ifname} ",
+		"tooltip-format-disconnected": "󰖪",
+		"max-length": 50,
+		"on-click": "exec nmrs"
+	},
+	"bluetooth": {
+		"format": "",
+		"format-disabled": "", // an empty format will hide the module
+		"format-connected": " {num_connections}",
+		"tooltip-format": "{controller_alias}\t{controller_address}",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"on-click": "exec kitty --title=bluetui -e bluetui"
+	},
+	"clock": {
+		"format": "󰥔 {:L%a, %d. %b %H:%M}",
+		"locale": "pt_BR.utf8",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			"format": {
+				"today": "<span color='#75f1fa'><b>{}</b></span>"
+			}
+		}
+	}, 
+	"cpu": {
+		"interval": 10,
+		"format": " {}%",
+		"max-length": 10,
+		"on-click": "exec kitty --title=btop -e btop"
+	},
+	"memory": {
+		"interval": 30,
+		"format": " {percentage}%",
+		"tooltip-format": "{used:0.1f}G/{total:0.1f}G used",
+		"on-click": "exec kitty --title=htop -e htop"
+	},
+	"pulseaudio": {
+		"format": "{icon}",
+		"format-muted": "",
+		"format-icons": {
+		"escape": true,
+
+			"default": ["", ""]
+		},
+		"scroll-step": 1,
+		"ignored-sinks": ["Easy Effects Sink"],
+		"on-click": "pavucontrol"
+	},
+	"pulseaudio/slider": {
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal"
+	},
+	"group/brim": {
+		"orientation": "horizontal",
+		"modules": ["backlight", "backlight/slider"],
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "backlight-slider",
+			"transition-left-to-right": false
+		}
+	},
+		"group/volume": {
+		"orientation": "horizontal",
+		"modules": ["pulseaudio", "pulseaudio/slider"]
+	},
+	"group/media":{
+		"orientation": "horizontal",
+		"modules":[
+			"custom/media-animation",
+			"custom/media-now-playing",
+			"custom/media-time"
+		]
+	},
+	"custom/media-now-playing": {
+		"exec": "~/.config/waybar/custom_modules/media/media-now-playing.sh",
+		"escape": true,
+		"tooltip": false,
+		"on-click": "playerctl play-pause",
+		"on-click-middle": "playerctl previous",
+		"on-click-right": "playerctl next"
+	},
+	"custom/media-animation": {
+		"exec": "~/.config/waybar/custom_modules/media/media-animation.sh",
+		"tooltip": false
+	},
+	"custom/media-time": {
+		"exec": "~/.config/waybar/custom_modules/media/media-time.sh",
+		"tooltip": false,
+		"interval": 1
+	},
+
+	"custom/power": {
+		"format" : "⏻",
+		"tooltip": false,
+		"menu": "on-click",
+		"menu-file": "~/.config/waybar/power_menu.xml",
+		"menu-actions": {
+			"shutdown": "zenity --question --text='Você tem certeza que quer desligar?' && shutdown -h now",
+			"reboot": "zenity --question --text='Você tem certeza que quer desligar?' && reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate"
+		}
+	}
+
+}

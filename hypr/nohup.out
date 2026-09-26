@@ -1,0 +1,51 @@
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.862: broker.vala:156: Error loading plugin: libaspell.so.15: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.862: broker.vala:156: Error loading plugin: libhspell.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.862: broker.vala:156: Error loading plugin: libvoikko.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.862: broker.vala:156: Error loading plugin: libhunspell-1.7.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.863: broker.vala:156: Error loading plugin: libnuspell.so.5: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.863: broker.vala:156: Error loading plugin: libaspell.so.15: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.863: broker.vala:156: Error loading plugin: libhspell.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.863: broker.vala:156: Error loading plugin: libvoikko.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.863: broker.vala:156: Error loading plugin: libhunspell-1.7.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:76538): libenchant-WARNING **: 20:50:22.863: broker.vala:156: Error loading plugin: libnuspell.so.5: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.185: broker.vala:156: Error loading plugin: libaspell.so.15: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.185: broker.vala:156: Error loading plugin: libhspell.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.185: broker.vala:156: Error loading plugin: libvoikko.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.185: broker.vala:156: Error loading plugin: libhunspell-1.7.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.185: broker.vala:156: Error loading plugin: libnuspell.so.5: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.186: broker.vala:156: Error loading plugin: libaspell.so.15: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.186: broker.vala:156: Error loading plugin: libhspell.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.186: broker.vala:156: Error loading plugin: libvoikko.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.186: broker.vala:156: Error loading plugin: libhunspell-1.7.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 20:50:31.186: broker.vala:156: Error loading plugin: libnuspell.so.5: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 21:00:48.314: broker.vala:156: Error loading plugin: libaspell.so.15: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 21:00:48.314: broker.vala:156: Error loading plugin: libhspell.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 21:00:48.314: broker.vala:156: Error loading plugin: libvoikko.so.1: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 21:00:48.314: broker.vala:156: Error loading plugin: libhunspell-1.7.so.0: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+
+(org.gnome.gedit:77406): libenchant-WARNING **: 21:00:48.314: broker.vala:156: Error loading plugin: libnuspell.so.5: não é possível abrir arquivo compartilhado: Arquivo ou diretório inexistente
+Gdk-Message: 21:01:47.268: Error reading events from display: Pipe quebrado
